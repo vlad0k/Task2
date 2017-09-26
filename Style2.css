@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	font-family: Helvetica;
+	min-width: 750px;
+}
+
+.head{
+	background-image:url(Draw/mountain.jpg);
+	background-size: cover; 
+	color: white;
+	max-height: 400px;
+}
+
+.Title{
+	font-size: 30px;
+	
+}
+
+.Title2{
+	font-size: 70px;
+	text-align:center;
+	margin: 20px; 
+	margin-bottom: 60px;
+}
+
+.butbut{
+	display: flex;
+}
+
+.but{
+	display: inline-block;
+	background-color:red;
+	text-align:center;
+	padding-top: 5px;
+	
+	padding-bottom: 5px;
+	margin-left: 100px;
+	margin-right: -90px;
+	border-radius: 5px 5px 0 0;
+	
+	vertical-align: bottom;
+	width: 100px;
+}
+
+.but:hover{
+	background-color:white;
+	color: black;
+}
+
+.form1_1{
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+    justify-content:space-around;
+	align-content: space-around;
+	background-color: #f7f7f7;
+}
+.form1{
+	height: 50px;
+	width:  300px;
+	border: 2px solid #ff9393;
+	background-color: #ffeaea;
+	font-size:20px;
+	margin: 15px;
+}
+.search{
+	background-color: #ff9393;
+}
