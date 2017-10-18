@@ -2,13 +2,14 @@ body{
 	margin: 0;
 	font-family: sans-serif;
 	min-width: 750px;
+	max-width: 1366px;
 }
 
 .head{
 	background-image:url(Draw/mountain.jpg);
 	background-size: cover; 
 	color: white;
-	max-height: 400px;
+	height: 400px;
 }
 
 .Title{
@@ -21,7 +22,7 @@ body{
 }
 
 .Title2{
-	font-size: 70px;
+	font-size: 60px;
 	text-align:center;
 	margin: 9px; 
 	margin-bottom: 60px;
@@ -36,14 +37,13 @@ body{
 	background-color:red;
 	text-align:center;
 	padding-top: 5px;
-	
+	margin-bottom: 0px;
 	padding-bottom: 5px;
 	margin-left: 100px;
 	margin-right: -90px;
 	border-radius: 5px 5px 0 0;
-	
-	vertical-align: bottom;
 	width: 100px;
+	margin-top: 33px;
 }
 
 .but:hover{
@@ -72,10 +72,12 @@ body{
 .search{
 	background-color: #ff4747;
 	color: white;
+	outline: none;
 }
 .why_us{
 	width: 85%;
 	margin: auto;
+	margin-bottom: 15px;
 }
 .why_us_1{
 	display: flex;
@@ -96,12 +98,268 @@ body{
 	flex-direction: column;
 	align-items: center;
 	margin: 10px;
-		flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 .shop1{
 	color: grey;
 	font-size: 18px;
 	margin-top: 10px;
 	text-align: center;
+}
 
+@keyframes move {
+  0% {
+   top: 100%;
+    }
+  100% {
+    top: 0;
+    }
+}
+.Cities{
+	align-content: bottom;
+}
+.France{
+	background-image: url(Draw/France.png);
+	position: relative;
+	width: 601px;
+	height: 280px;
+	overflow:hidden;
+	float: left;
+	margin: 10px;
+}
+.France div{
+	width: 601px;
+	height: 280px;
+	color: rgba(0,0,0,0);
+}
+
+.France div:hover {
+	padding-top: 230px;
+	padding-left: 1%;
+	position: absolute;
+	animation: move 1s;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	overflow:hidden;
+	
+}
+
+.ElseCity{
+	position: relative;
+	width: 280px;
+	height: 280px;
+	overflow:hidden;
+	float: left;
+	margin: 10px;
+}
+
+.ElseCity div{
+	width: 280px;
+	height: 280px;
+	color: rgba(0,0,0,0);
+}
+
+.ElseCity div:hover {
+	padding-top: 230px;
+	padding-left: 1%;
+	position: absolute;
+	animation: move 1s;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	overflow:hidden;
+}
+
+.Greece{
+	background-image: url(Draw/Greece.png);
+}
+.Dubai{
+	background-image: url(Draw/Dubai.png);
+}
+.Tokyo{
+	background-image: url(Draw/Tokyo.png);
+}
+.NY{
+	margin-top: 10px;
+	background-image: url(Draw/NY.png);
+	float: none;
+}
+
+.bookNow{
+	background-image:url(Draw/mountain.jpg);
+	background-size: cover; 
+	background-attachment: fixed;
+	padding: 10%;
+}
+.bookNowText{
+	text-align: center;
+	color: white;
+	margin: 50px;
+}
+
+.bookNow2{
+	display: flex;
+	justify-content: space-around;
+}
+.transp{
+	background-color: rgba(0, 0, 0, 0);
+	outline: none;
+	border: 2px solid white;
+	color:white;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: 100;
+}
+
+.subscribe{
+	background-image:url(Draw/lego-grey-3h2.jpg);
+	background-repeat: repeat-x;
+	height: 130px;
+	color:white;
+}
+.subscribe{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.subscr{
+	width: 512px;
+}
+.subscr2{
+	width: 512px;
+	padding: 5px;
+	padding-right: 0;
+	background-color: grey;
+	border: 1px double white;
+}
+.formEmail{
+	height: 40px;
+	width: 75%;
+	background-color: grey;
+	outline: none;
+	 border: none;
+	color:white;
+}
+.formEmail::placeholder{
+	color: white;
+	font-style: italic;
+	font-weight: thin;
+}
+
+.search2{
+	background-color: #ff4747;
+	color: white;
+	outline: none;
+	border: none;
+	margin: -5px;
+	height: 52px;
+	width: 25%;
+}
+.bottom{
+	color: white;
+	background-image: url(Draw/Footerbg.jpg);
+	background-size: cover;
+	margin: -50;
+	}
+
+.sotial{
+	width: 32px;
+	height: 32px;
+	margin: 10px;
+}
+.soc{
+	display: flex;
+	align-items: flex-start;
+}
+.FB{
+	background-image:url(Draw/FB.png);
+}
+.TW{
+	background-image:url(Draw/TW.png);
+}
+.IN{
+	background-image:url(Draw/IN.png);
+}
+.YT{
+	background-image:url(Draw/YT.png);
+}
+.FB:hover{
+	background-image:url(Draw/FBFloat.png);
+}
+.TW:hover{
+	background-image:url(Draw/TWFloat.png);
+}
+.IN:hover{
+	background-image:url(Draw/INFloat.png);
+}
+.YT:hover{
+	background-image:url(Draw/YTFloat.png);
+}
+h1,h2,h6{
+	margin: 0;
+}
+h6{
+	margin-left: 15px;
+}
+.tere{
+	margin-top: -10px;
+}
+.nickname{
+	margin-top: 30px;
+	display: flex;
+	align-items: flex-start;
+	text-align: left;
+}
+.botColumn1, .botColumn2{
+	width: 27%;
+	margin: 30px;
+}
+
+.line{
+	display: flex;
+	justify-content: space-between;
+	margin-left : 30px;
+	margin-right : 30px;
+	}
+	
+.line1{
+	border-top: 1px solid white;
+	display: flex;
+	justify-content: space-between;
+	margin-left : 30px;
+	margin-right : 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+.comments{
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	
+}
+.Comment{
+	background-color: #ededed;
+	width: 45%;
+	margin: 10px;
+}
+.coma{
+	text-align: right;
+	font-size: 60px;
+	color:grey;
+}
+.round {
+    border-radius: 100px; 
+    border: 0px solid white;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: -20px;
+   }
+.comment1{
+	display:flex;
+	font-size: 20px;
+}
+
+.commentText{
+	margin: 20px;
+	color: grey;
+	text-align: left;
 }
